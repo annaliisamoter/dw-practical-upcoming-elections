@@ -27,6 +27,9 @@ def search():
             url=url,
             headers={'Accept': 'application/json'}
             )
+        # this flash statement is left on purpose, so you can see that the API call is working
+        # properly, the issue is in the parsing of the data for cities other than
+        # Wayland MA
         flash(r.text)
         parsed = helpers.parse_response(r)
         return render_template('election_results.html', parsed=parsed)
