@@ -1,0 +1,302 @@
+{
+'description':'Massachusetts Presidential Primary Election',
+'date': '2020-03-03T00:00:00Z',
+'district-divisions':
+    [
+        {
+        'ocd-id': 'ocd-division/country:us/state:ma',
+        'voter-registration-authority-level': 'municipal',
+        'election-authority-level': 'municipal',
+        'voting-methods':
+             [
+                 {
+                 'primary': True,
+                  'instructions':
+                      {
+                      'voting-id': "You may be asked to show identification if: "
+                                    "you are voting for the first-time in Massachusetts "
+                                    "in a federal election, you are an inactive voter, "
+                                    "you are casting a provisional or challenged ballot, "
+                                    "or if the poll worker has a reasonable suspicion that "
+                                    "leads them to request identification. Acceptable forms "
+                                    "include (must show your name and address at which you "
+                                    "are registered to vote): a MA driver's license or "
+                                    "MA-issued ID card; recent utility bill; rent receipt; "
+                                    "signed lease; a copy of a voter registration affidavit; "
+                                    "or any other printed identification which contains the "
+                                    "voter's name and address.\n\nVoters without ID: If "
+                                    "you're a first-time voter who is unable to present ID "
+                                    "when you check in, you may vote a provisional ballot "
+                                    "and return with acceptable ID by close of polls. If "
+                                    "you're asked for ID for any other reason, and are not "
+                                    "able to present ID in such a situation, you must still "
+                                    "be permitted to vote; however, your ballot must be "
+                                    "challenged. Your ballot will be cast normally, and will "
+                                    "only be re-examined in the case of a recount, court order,"
+                                    " or audit."
+                      },
+                  'type': 'in-person',
+                  'excuse-required': False
+                  },
+                  {
+                 'primary': False,
+                  'type': 'by-mail',
+                  'excuse-required': True,
+                  'ballot-request-deadline-received': '2020-03-02T00:00:00Z',
+                  'acceptable-forms':
+                      [{'name': 'ma_absentee'}]
+                  },
+                 {
+                 'primary': False,
+                  'start': '2020-02-24T00:00:00Z',
+                  'type': 'early-voting',
+                  'excuse-required': False,
+                  'end': '2020-02-28T00:00:00Z'
+                  }
+             ],
+        'voter-registration-methods':
+             [
+                  {
+                  'instructions':
+                      {
+                      'registration': "You should know: you need an ID issued by the Massachusetts "
+                                   "Registry of Motor Vehicles. If you don't have an ID issued by "
+                                   "the Massachusetts Registry of Motor Vehicles, you can still "
+                                   "register by mail to vote."},
+                      'type': 'online',
+                      'supports-iframe': True,
+                      'deadline-online': '2020-02-12T00:00:00Z',
+                      'url': 'https://www.sec.state.ma.us/OVR/Pages/CheckEligibility.aspx?&Action=Register'
+                      },
+                      {
+                      'deadline-postmarked': '2020-02-12T00:00:00Z',
+                      'instructions':
+                           {
+                           'signature': 'To register in Massachusetts you must: \nbe a citizen of '
+                                          'the United States \nbe a resident of Massachusetts \nbe at '
+                                          'least 16 years old (must be 18 years old to vote on Election '
+                                          'Day)\nnot have been convicted of corrupt practices in respect '
+                                          'to elections \nnot be under guardianship with respect to voting '
+                                          '\nnot be currently incarcerated for a felony conviction',
+                           'idnumber': 'Federal law requires that you provide your Massachusetts driver\'s '
+                                         'license number to register to vote. If you do not have a current '
+                                         'and valid Massachusetts driver\'s license, you must provide the last '
+                                         'four digits of your Social Security number. If you have neither, you '
+                                         'must write "NONE" in the box and a unique identifying number will be '
+                                         'assigned to you.'
+                           },
+                           'type': 'by-mail',
+                           'acceptable-forms':
+                                [{'name': 'nvrf'}]
+                           }
+                  ],
+             'primary-voting-method-source': 'state'
+        }
+    ],
+'type': 'presidential-primary',
+'source':
+    {
+    'type': 'state-list',
+     'notes': 'https://www.sec.state.ma.us/CalendarWeb/Pages/MonthWeekCalendar.aspx#',
+     'date': '2019-12-05T00:00:00Z'
+     },
+ 'polling-place-url': 'https://www.sec.state.ma.us/wheredoivotema//bal/myelectioninfo.aspx',
+ 'id': '5e262e0e-d971-461c-8b7c-31eeb50d7fcc',
+ 'population': 6902149,
+ 'website': 'https://www.sec.state.ma.us/ele/elevoterresources.htm',
+ 'polling-place-url-shortened': 'https://tvote.org/2v2xAee'
+}
+
+//
+{
+"description":"California Presidential Primary Election",
+"date":"2020-03-03T00:00:00Z",
+"district-divisions":
+    [
+        {
+        "ocd-id":"ocd-division/country:us/state:ca",
+        "voter-registration-authority-level":"county",
+        "election-authority-level":"county",
+        "voting-methods":
+            [
+                {
+                "primary":true,
+                "instructions":
+                    {
+                    "voting-id": "If you've voted in California before, you don't need to show ID. \n\nIf you're a
+                    first-time voter who registered by mail, and didn't include your driver's license number,
+                    California ID number, or the last 4 digits of your Social Security number on your registration,
+                    you may be asked to provide ID when you vote. Acceptable forms include: copy of a recent utility bill,
+                    the sample ballot booklet you received from your county elections office or another document sent
+                    to you by a government agency, a US passport, driver license, official state identification card,
+                    or student identification card showing your name and photograph.\n\nVoters without ID: If you are
+                    unable to provide ID, you will be able to vote a provisional ballot."
+                    },
+                "type":"in-person",
+                "excuse-required":false
+                },
+                {
+                "primary":false,
+                "type":"early-voting",
+                "excuse-required":false
+                },
+                {
+                "primary":false,
+                "type":"by-mail",
+                "excuse-required":false,
+                "ballot-request-deadline-received":"2020-02-25T00:00:00Z",
+                "acceptable-forms":
+                    [{"name":"ca_absentee"}]
+                }
+            ],
+        "voter-registration-methods":
+            [
+                {
+                "type":"in-person",
+                "end":"2020-03-02T00:00:00Z"
+                },
+                {
+                "instructions":
+                    {
+                    "registration":"You should know: You will need a California-issued ID card, the last four digits of
+                         your social security number, and consent to the use of your DMV-stored digital signature to use
+                         California’s online voter registration system. If you don’t have a California-issued ID or don’t
+                          want to provide consent for the use of your digital signature, you can still register by mail to vote."
+                     },
+                "type":"online",
+                "supports-iframe":false,
+                "deadline-online":"2020-02-18T00:00:00Z",
+                "url":"https://registertovote.ca.gov/"
+                },
+                {
+                "deadline-postmarked":"2020-02-18T00:00:00Z",
+                "instructions":
+                        {
+                        "idnumber":"When you register to vote, you must provide your California driver's license or
+                            California identification card number, if you have one. If you do not have a driver's license or
+                            ID card, you must provide the last four digits of your Social Security number (SSN). If you do
+                            not include this information, you will be required to provide identification when you vote.",
+                        "signature":"To register in California you must:\nbe a citizen of the United States\nbe a resident
+                            of California\nbe at least 18 or older on Election Day to vote\nnot be currently in state or federal
+                            prison or on parole for the conviction of a felony \nnot be currently found to be mentally incompetent
+                             to vote by a court"
+                         },
+                 "type":"by-mail",
+                 "acceptable-forms":
+                    [{"name":"nvrf"}]
+                },
+                {
+                "type":"election-day"
+                }
+            ],
+        "primary-voting-method-source":"state"
+    }
+],
+"type":"presidential-primary",
+"source":
+    {
+    "type":"state-list",
+    "notes":"https://www.sos.ca.gov/elections/upcoming-elections/presidential-primary-election-march-3-2020/",
+    "date":"2019-12-09T00:00:00Z"},
+    "polling-place-url":"https://voterstatus.sos.ca.gov",
+    "id":"5e265574-f8ce-4be1-a57e-84efd0c8ebcf",
+    "local-voting-methods":
+        [
+            {
+            "ocd-id":"ocd-division/country:us/state:ca/county:sacramento",
+            "voting-methods":
+                [
+                    {
+                    "primary":true,
+                    "type":"by-mail",
+                    "excuse-required":false
+                    },
+                    {
+                    "primary":false,
+                    "type":"early-voting",
+                    "excuse-required":false
+                    },
+                    {
+                    "primary":false,"instructions":
+                        {
+                        "voting-id":"If you've voted in California before, you don't need to show ID. \n\nIf you're a
+                        first-time voter who registered by mail, and didn't include your driver's license number,
+                        California ID number, or the last 4 digits of your Social Security number on your registration,
+                        you may be asked to provide ID when you vote. Acceptable forms include: copy of a recent utility
+                        bill, the sample ballot booklet you received from your county elections office or another document
+                        sent to you by a government agency, a US passport, driver license, official state identification
+                        card, or student identification card showing your name and photograph.\n\nVoters without ID: If
+                        you are unable to provide ID, you will be able to vote a provisional ballot."
+                        },
+                    "type":"in-person",
+                    "excuse-required":false
+                    }
+                ],
+            "primary-voting-method-source":"local"
+            },
+            {
+            "ocd-id":"ocd-division/country:us/state:ca/county:fresno",
+            "voting-methods":
+                [
+                    {
+                    "primary":true,
+                    "type":"by-mail",
+                    "excuse-required":false
+                    },
+                    {
+                    "primary":false,
+                    "type":"early-voting",
+                    "excuse-required":false
+                    },
+                    {
+                    "primary":false,
+                    "instructions":
+                        {
+                        "voting-id":"If you've voted in California before, you don't need to show ID. \n\nIf you're a
+                        first-time voter who registered by mail, and didn't include your driver's license number,
+                        California ID number, or the last 4 digits of your Social Security number on your registration,
+                        you may be asked to provide ID when you vote. Acceptable forms include: copy of a recent utility
+                        bill, the sample ballot booklet you received from your county elections office or another document
+                        sent to you by a government agency, a US passport, driver license, official state identification
+                        card, or student identification card showing your name and photograph.\n\nVoters without ID: If
+                        you are unable to provide ID, you will be able to vote a provisional ballot."
+                        },
+                    "type":"in-person",
+                    "excuse-required":false
+                    }
+                ],
+            "primary-voting-method-source":"local"
+        },
+        {
+        "ocd-id":"ocd-division/country:us/state:ca/county:los_angeles",
+        "voting-methods":
+            [
+                {
+                "primary":true,
+                "type":"by-mail",
+                "excuse-required":false
+                },
+                {
+                "primary":false,
+                "type":"early-voting"
+                ,"excuse-required":false
+                },
+                {
+                "primary":false,"instructions":
+                    {
+                    "voting-id":"If you've voted in California before, you don't need to show ID. \n\nIf you're a
+                    first-time voter who registered by mail, and didn't include your driver's license number, California
+                    ID number, or the last 4 digits of your Social Security number on your registration, you may be asked
+                    to provide ID when you vote. Acceptable forms include: copy of a recent utility bill, the sample ballot
+                    booklet you received from your county elections office or another document sent to you by a government
+                    agency, a US passport, driver license, official state identification card, or student identification
+                    card showing your name and photograph.\n\nVoters without ID: If you are unable to provide ID, you will
+                    be able to vote a provisional ballot."
+                    },
+                "type":"in-person",
+                "excuse-required":false
+                }
+            ],
+        "primary-voting-method-source":"local"
+        },
+      }

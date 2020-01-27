@@ -10,25 +10,25 @@ bp = Blueprint('address_form', __name__, url_prefix='/')
 @bp.route('/search', methods=('GET', 'POST'))
 @bp.route('/')
 def search():
-    """Take in an address."""
+    """Take in an address from form and make call to turbo vote api.
+    Currently only state and city are being used to
+    generate ocd-ids per the assignment instructions
+    """
     if request.method == 'POST':
         street = request.form.get('street')
-        #flash(street)
         street2 = request.form.get('street-2')
         city = request.form.get('city')
         state = request.form.get('state')
         zip_code = request.form.get('zip')
         ocd_ids = helpers.ocd_ids_helper(state, city)
-        flash(state)
-        flash(city)
-        flash(ocd_ids)
 
-        url = helpers.api_url(ocd_ids)
+        url = helpers.generate_api_url(ocd_ids)
         r = requests.get(
-            url='https://api.turbovote.org/elections/upcoming?district-divisions=ocd-division/country:us/state:ma,ocd-division/country:us/state:ma/place:wayland',
+            url=url,
             headers={'Accept': 'application/json'}
             )
         flash(r.text)
-        return render_template('election_results.html', ocd_ids=ocd_ids)
+        parsed = helpers.parse_response(r)
+        return render_template('election_results.html', parsed=parsed)
 
     return render_template('address_form.html', states=postal_abbreviations)

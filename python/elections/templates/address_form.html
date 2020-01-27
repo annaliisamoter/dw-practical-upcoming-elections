@@ -13,9 +13,9 @@
       <input name="street-2" id="street-2-field" type="text"></div>
     <div>
       <label for="city-field">City: </label>
-      <input name="city" id="city-field" type="text">
+      <input name="city" id="city-field" type="text" required=""required">
       <label for="state-field">State: </label>
-      <select name="state" id="state-field">
+      <select name="state" id="state-field" required=""required">
         <option></option>
         {% for state in states %}
           <option value="{{ state }}">{{ state }}</option>

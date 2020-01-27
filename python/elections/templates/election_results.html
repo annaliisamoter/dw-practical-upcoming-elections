@@ -1,8 +1,17 @@
 {% extends 'base.html' %}
+
 {% block content %}
 <div>
-    {% for ocd_id in ocd_ids %}
-    <p>ocd_id</p>
-    {% endfor %}
+    <h2>Upcoming Elections</h2>
+    {% if parsed %}
+        {% for key, value in parsed.items() %}
+            <h5>{{ key }}</h5>
+
+            <p>{{ value }}</p>
+
+        {% endfor %}
+    {% else %}
+        <p>No upcoming elections were found for your address</p>
+    {% endif %}
 </div>
 {% endblock %}
